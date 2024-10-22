@@ -8,7 +8,7 @@ const LandingPage = () => {
     <div className="h-full w-full flex flex-col bg-black">
       {/* Hero Section */}
       <div className="mb-28">
-        <div className="md:absolute top-0 left-0 w-full flex justify-between items-center md:p-8 z-20">
+        <div className="md:absolute top-0 left-0 w-full flex justify-between items-center p-4 md:p-8 z-20">
           <span className="text-white text-xl md:text-2xl font-bold">
             LuckyDragon
           </span>
@@ -22,7 +22,12 @@ const LandingPage = () => {
         <img
           src="/images/hero.svg"
           alt="hero"
-          className="w-full h-full object-cover"
+          className="w-full h-full object-cover hidden md:flex"
+        />
+        <img
+          src="/images/hero-sm.svg"
+          alt="hero"
+          className="w-full h-full object-cover flex md:hidden"
         />
         <div className="relative z-10 text-center px-4 md:-mt-32">
           <h1 className="text-white text-[34px] md:text-[96px] leading-[34px] md:leading-[96px] font-bold mb-6 whitespace-nowrap">
