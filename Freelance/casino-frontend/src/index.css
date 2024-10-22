@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  font-family: "Utendo", sans-serif;
+}
+
+@font-face {
+  font-family: "Utendo";
+  src: url("../src/assets/fonts/Utendo-Regular-BF65b1be04f3a0e.ttf")
+    format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Utendo";
+  src: url("../src/assets/fonts/Utendo-Bold-BF65b1be0491ea7.ttf")
+    format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
