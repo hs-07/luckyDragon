@@ -1,6 +1,7 @@
 import React from "react";
 
 import { gameImages, games, CardItems } from "../utils/constants";
+import { Link } from "react-router-dom";
 
 const LandingPage = () => {
   return (
@@ -11,9 +12,12 @@ const LandingPage = () => {
           <span className="text-white text-xl md:text-2xl font-bold">
             LuckyDragon
           </span>
-          <button className="px-6 py-2 rounded-full bg-transparent text-white border border-white hover:bg-white hover:text-black transition-colors">
+          <Link
+            to={"/contact"}
+            className="px-6 py-2 rounded-full bg-transparent text-white border border-white hover:bg-white hover:text-black transition-colors"
+          >
             Join now
-          </button>
+          </Link>
         </div>
         <img
           src="/images/hero.svg"
@@ -26,9 +30,12 @@ const LandingPage = () => {
             <br />
             your 500 bonus now !
           </h1>
-          <button className="px-12 py-3 bg-primary text-white rounded-full text-lg font-semibold hover:bg-red-700 transition-colors">
+          <Link
+            to={"/contact"}
+            className="px-12 py-3 bg-primary text-white rounded-full text-lg font-semibold hover:bg-red-700 transition-colors"
+          >
             Claim now
-          </button>
+          </Link>
         </div>
       </div>
 
@@ -95,9 +102,12 @@ const LandingPage = () => {
             official release. Get in early, and enjoy all the action before
             anyone else!
           </p>
-          <button className="px-12 py-3 bg-primary text-white rounded-full text-lg font-semibold hover:bg-red-700 transition-colors">
+          <Link
+            to={"/contact"}
+            className="px-12 py-3 bg-primary text-white rounded-full text-lg font-semibold hover:bg-red-700 transition-colors"
+          >
             Claim now
-          </button>
+          </Link>
         </div>
       </div>
 
